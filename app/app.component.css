@@ -1,0 +1,26 @@
+.wrapper {
+  position: relative;
+  width: 600px;
+  margin: 0 auto 130px auto;
+}
+.row {
+  display:inline-block
+}
+.row.right {
+  min-width: 400px;
+  cursor: pointer;
+}
+.list {
+  position: relative;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  padding: 10px;
+  color: #336699;
+}
+ul li:nth-child(odd){
+  background: rgba(0,0,50,.1);
+}

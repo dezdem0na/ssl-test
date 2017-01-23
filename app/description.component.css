@@ -1,0 +1,6 @@
+div.description {
+  padding: 10px;
+  position: absolute;
+  background-color: white !important;
+  border: solid lightgray 1px;
+}

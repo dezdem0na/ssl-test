@@ -1,0 +1,5 @@
+<div class="description"
+     *ngIf="certificate.description_visible">
+  <div *ngIf="certificate.description_ru" [innerHTML]="certificate.description_ru | cutExtra"></div>
+  <div *ngIf="!certificate.description_ru">Описание недоступно</div>
+</div>

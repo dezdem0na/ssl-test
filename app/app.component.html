@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <h1>{{ title }}</h1>
+
+  <div class="list">
+    <ul>
+      <li *ngFor="let cert of certificates;">
+          <div class="row right"
+               (mouseover)=onMouseover(cert)
+               (mouseout)="onMouseout(cert)">
+            {{ cert.name }}
+          </div>
+
+          <div class="row left">
+            от
+            <min-cost [costs]="cert.price.period"></min-cost>
+            <span>{{ cert.price.currency }}</span>
+          </div>
+
+          <description [certificate]="cert"></description>
+      </li>
+    </ul>
+  </div>
+</div>
